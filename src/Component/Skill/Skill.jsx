@@ -11,8 +11,12 @@ const Skill = () => {
         setActiveSkill(skill);
     };
     return (
-        <section className="skill-container">
+        <section id="skill" className="skill-container">
             <h5>Technical Proficiency</h5>
+            <p className="skill-description">
+                Here are some of my skills on which I have been working on for
+                the past 2 years.
+            </p>
             <div className="skill-content">
                 <div className="skills">
                     {SkillData.map((skill) => (

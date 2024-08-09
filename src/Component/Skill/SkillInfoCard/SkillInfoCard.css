@@ -20,8 +20,10 @@
 .skill-info-content {
     padding: 2rem;
     display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+    grid-template-columns: repeat(2, 1fr);
     align-items: center;
     line-height: 1.5rem;
 }

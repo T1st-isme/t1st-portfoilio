@@ -47,6 +47,8 @@
   position: relative;
 }
 
+
+
 @media (max-width: 85%) {
   .container {
     padding: 0 1.5rem;

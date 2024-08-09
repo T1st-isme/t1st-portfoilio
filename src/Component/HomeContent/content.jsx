@@ -2,7 +2,7 @@ import "./content.css";
 
 const HomeContent = () => {
     return (
-        <section className="home-container">
+        <section id="about" className="home-container">
             <div className="home-content">
                 <h2>Building Digital Experiences That Inspire</h2>
                 <p>

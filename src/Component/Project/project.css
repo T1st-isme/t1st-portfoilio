@@ -1,0 +1,320 @@
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%); */
+}
+
+.project-container::after,
+.project-container::before {
+    content: " ";
+    width: 28rem;
+    height: 28rem;
+    border-radius: 28rem;
+    background: #9e51b9;
+    position: absolute;
+    z-index: -1;
+    filter: blur(200px);
+}
+
+.project-container::after {
+    top: 12rem;
+    left: -5rem;
+}
+
+.project-container::before {
+    background: #7c66e3;
+    bottom: 0rem;
+    right: 0rem;
+}
+
+.project-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1350px;
+    padding: 10px 0px 100px 0;
+    gap: 12px;
+}
+
+@media (max-width: 960px) {
+    .project-wrapper {
+        flex-direction: column;
+    }
+}
+
+.project-title {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .project-title {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+}
+
+.project-desc {
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+    max-width: 600px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .project-desc {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+}
+
+.project-toggle-button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #7c5fe6;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: rgba(22, 17, 47, 0.5);
+    width: 50%;
+}
+
+.project-toggle-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    flex: 1;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.project-toggle-button.active {
+    background: #7c5fe6;
+    color: #fff;
+    border-radius: 0.5rem;
+}
+
+.project-toggle-button:not(:last-child) {
+    border-right: 1px solid #7c5fe6;
+}
+
+.project-toggle-button:hover {
+    background: rgba(124, 95, 230, 0.2);
+}
+
+.project-divider {
+    width: 1.5px;
+    background: #7c5fe6;
+}
+
+.project-card-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: rgba(22, 17, 47, 0.8);
+    border: 1px solid #7c5fe6;
+    border-radius: 0.65rem;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 350px;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 480px;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 16px 15px rgba(124, 95, 230, 0.5);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.project-modal-title {
+    font-size: 1.7rem;
+    margin-bottom: 0.5rem;
+    text-align: start;
+}
+
+.project-modal-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    max-height: 4.5rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+.project-card .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.project-card .tag {
+    background: #7c5fe6;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+}
+
+.project-modal-overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.project-modal {
+    background: #1e1e2f;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 1000px;
+    width: 90%;
+    position: relative;
+    outline: none;
+}
+
+.project-modal-image {
+    margin-top: 25px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.project-modal-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-modal-content p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.project-modal-content .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.project-modal-content .tag {
+    background: #7c5fe6;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.project-modal-content .modal-buttons {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin: 12px 0px;
+    gap: 12px;
+}
+
+.project-modal-content .modal-buttons a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn_view_code {
+    background-color: rgb(28, 30, 39);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_view_code:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+}
+
+/* .btn_view_code_icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.btn_view_live {
+    background-color: #7c5fe6;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn_view_live:hover {
+    background: rgba(22, 17, 47, 0.8);
+    border: 1px solid #7c5fe6;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #fff;
+    cursor: pointer;
+}
+/* .project-modal-content .modal-buttons a:hover {
+    background: rgba(22, 17, 47, 0.8);
+    border: 1px solid #7c5fe6;
+} */

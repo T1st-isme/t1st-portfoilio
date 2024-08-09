@@ -1,0 +1,74 @@
+.education-container {
+    padding: 2rem;
+    color: #fff;
+}
+
+.education-title {
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.education-description {
+    font-size: 18px;
+    text-align: center;
+    max-width: 600px;
+    color: #aaa;
+    margin: 0 auto;
+}
+
+.education-timeline {
+    margin-top: 3.5rem;
+}
+
+.vertical-timeline-element-title {
+    font-size: 1.5rem;
+    background: linear-gradient(180deg, #7c5fe6, #9e51b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 1.1rem;
+    color: #ddd;
+}
+
+.timeline-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #7c5fe6, #9e51b9);
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-icon img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+}
+
+.vertical-timeline-element-content {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vertical-timeline-element-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(221, 140, 250, 0.5);
+}
+
+@media screen and (max-width: 1024px) {
+    .education-container {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .education-container {
+        padding: 1rem;
+    }
+}
