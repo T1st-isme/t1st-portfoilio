@@ -1,6 +1,5 @@
 import "./footer.css";
 import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Bio } from "../../Utils/data.js";
@@ -21,7 +20,7 @@ const Footer = () => {
                     {/* <a className="footer-nav-link" href="#experience">
                         Experience
                     </a> */}
-                    <a className="footer-nav-link" href="#projects">
+                    <a className="footer-nav-link" href="#project">
                         Projects
                     </a>
                     <a className="footer-nav-link" href="#education">

@@ -20,7 +20,7 @@ export const SkillData = [
     {
         id: 1,
         title: "Frontend",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/frontend.png",
         skills: [
             { skill: "HTML", percentage: "80%" },
             { skill: "CSS", percentage: "60%" },
@@ -49,7 +49,7 @@ export const SkillData = [
     {
         id: 2,
         title: "Backend",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/backend.png",
         skills: [
             {
                 skill: "Node.JS",
@@ -64,7 +64,7 @@ export const SkillData = [
     {
         id: 3,
         title: "Database",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/database.png",
         skills: [
             {
                 skill: "SQLServer",
@@ -79,7 +79,7 @@ export const SkillData = [
     {
         id: 4,
         title: "Tools",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/tools.png",
         skills: [
             {
                 skill: "Git",
@@ -102,7 +102,7 @@ export const SkillData = [
     {
         id: 5,
         title: "Languages",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/language.png",
         skills: [
             {
                 skill: "English",
@@ -113,7 +113,7 @@ export const SkillData = [
     {
         id: 6,
         title: "Soft Skills",
-        iconUrl: "https://cdn-icons-png.flaticon.com/512/5968/5968292.png",
+        iconUrl: "./assets/images/skills/softskill.png",
         skills: [
             {
                 skill: "Communication",

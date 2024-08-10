@@ -16,7 +16,7 @@ const HomeContent = () => {
                         <img src="./assets/images/tech/react.png" alt="react" />
                     </div>{" "}
                     <img
-                        src="public/assets/avatar.jpg"
+                        src="/assets/avatar.jpg"
                         alt="avatar"
                         className="avatar"
                     />
