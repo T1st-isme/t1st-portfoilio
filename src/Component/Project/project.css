@@ -123,6 +123,23 @@
     background: #7c5fe6;
 }
 
+@media (max-width: 768px) {
+    .project-toggle-button-group {
+        margin-top: 12px;
+        width: 100%;
+        font-size: 0.875rem;
+    }
+    .project-toggle-button {
+        padding: 0.5rem 0.5rem;
+    }
+
+    .project-toggle-button:not(:last-child) {
+        border-right: 1px solid #7c5fe6;
+    }
+    .project-toggle-button:hover {
+        background: rgba(124, 95, 230, 0.2);
+    }
+}
 .project-card-container {
     margin-top: 2rem;
     display: flex;
