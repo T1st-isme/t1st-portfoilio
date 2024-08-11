@@ -1,10 +1,28 @@
 import "./content.css";
+import { ReactTyped } from "react-typed";
 
 const HomeContent = () => {
     return (
         <section id="about" className="home-container">
             <div className="home-content">
-                <h2>Building Digital Experiences That Inspire</h2>
+                <h2>
+                    Hi I&apos;m <span>Trien</span>
+                </h2>
+                <h3>
+                    I am a{" "}
+                    <ReactTyped
+                        strings={[
+                            "Frontend Developer",
+                            "Backend Developer",
+                            "Full Stack Developer",
+                            "UI/UX Designer",
+                        ]}
+                        className="react-typed"
+                        typeSpeed={40}
+                        backSpeed={50}
+                        loop
+                    />
+                </h3>
                 <p>
                     Passionate Frontend Developer | Transforming ideas into
                     Seamless and Visually Stunning Web Solutions
