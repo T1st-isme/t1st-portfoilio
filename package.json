@@ -1,11 +1,11 @@
 {
-  "homepage": "http://T1st-isme.github.io/t1st-portfoilio/",
+  "homepage": "http://T1st-isme.github.io/",
   "name": "t1st-portfoilio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "predeploy": "yarn build",
+    "predeploy": "bun build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
