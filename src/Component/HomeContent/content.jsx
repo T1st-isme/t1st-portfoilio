@@ -1,7 +1,15 @@
+import { Icon } from "@iconify/react";
 import "./content.css";
 import { ReactTyped } from "react-typed";
 
+const cv = "./assets/HaTrungTrien_CV.pdf";
 const HomeContent = () => {
+    const handleDownloadCV = () => {
+        const link = document.createElement("a");
+        link.href = cv;
+        link.download = "HaTrungTrien_CV.pdf";
+        link.click();
+    };
     return (
         <section id="about" className="home-container">
             <div className="home-content">
@@ -27,6 +35,10 @@ const HomeContent = () => {
                     Passionate Frontend Developer | Transforming ideas into
                     Seamless and Visually Stunning Web Solutions
                 </p>
+                <button onClick={handleDownloadCV} className="download-cv-btn">
+                    CV
+                    <Icon className="cv-icon" icon="pepicons-pop:cv"  style={{color: "white"}} />
+                </button>
             </div>
             <div className="home-img">
                 <div>
